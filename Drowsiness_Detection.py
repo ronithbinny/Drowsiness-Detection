@@ -34,11 +34,11 @@ while True :
         print(distance1,distance2)
         ti = ti + 1
         
-        if distance1 <= 5 and distance2 <= 5 :
+        if distance1 <= 5 or distance2 <= 5 :
             print("SLEEPING")
         
     cv2.imshow('img',img)
-    if cv2.waitKey(0) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
